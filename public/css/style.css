@@ -1,0 +1,78 @@
+:root{
+    --firstColor : #3C873A;
+    --secondColor : #8CC84B;
+    --thirdColor : #FF6B6B;
+    --background : #000000;
+    --button : #eaeaea;
+    --text : #FFFFFF;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(201, 200, 200);
+}
+
+.container-calc{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    border: #FF6B6B;
+}
+
+.calc{
+    width: 70vh; 
+    height: 60vh; 
+    background-color: #363636; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.screen{
+    background-color: var(--background);
+    color: var(--text);
+    border-radius: 10px;
+}
+
+.btn-numbers{
+    background-color: var(--button);
+    color: var(--background);
+}
+
+.btn-operators{
+    background-color: var(--secondColor);
+    color: var(--text);
+}
+
+.btn-equals{
+    background-color: var(--firstColor);
+    color: var(--text);
+}
+
+.btn-clear{
+    background-color: var(--thirdColor);
+    color: var(--text);
+}
+
+.btn-numbers:hover{
+    background-color: var(--firstColor);
+    color: var(--text);
+}
+
+.btn-operators:hover{
+    background-color: var(--text);
+    color: var(--secondColor);
+}
+
+.btn-clear:hover{
+    background-color: var(--text);
+    color: var(--thirdColor);
+}
+
+.btn-equals:hover{
+    background-color: var(--text);
+    color: var(--firstColor);
+}

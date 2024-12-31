@@ -9,3 +9,11 @@ app.use(express.static('public'))
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
+
+app.get("/", (req, res) => {
+    res.render("index")
+})
+
+app.listen("8080", () => {
+    console.log("aplicação rodadando na porta 8080")
+})
