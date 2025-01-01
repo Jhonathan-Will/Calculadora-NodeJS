@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
 :root{
     --firstColor : #3C873A;
     --secondColor : #8CC84B;
@@ -7,8 +9,10 @@
     --text : #FFFFFF;
 }
 
+
 body{
-    background-color: rgb(201, 200, 200);
+    background-color: rgb(128, 128, 128);
+    font-family: Orbitron;
 }
 
 .calc{
