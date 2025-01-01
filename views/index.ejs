@@ -3,23 +3,25 @@
 
     <div class="container-calc">
         <div class="calc">
-            <div class="screen">
-                <h1>tela no baguio</h1>
+            <div class="container text-center">
+                <div class="col align-self-center ">
+                    <input class="screen w-100 p-2" type="text" placeholder="0" name="" id="screen" disabled/>
+                </div>    
             </div>
             
             <div class="container text-center ">
                 <div class="row g-1 m-1 mt-3">
                     <div class="col">
-                        <a href=""><button class=" btn btn-numbers w-100">1</button></a>
+                        <button onclick="addNumber(1)" class=" btn btn-numbers w-100">1</button>
                     </div>
                     <div class="col">
-                        <a href=""><button class=" btn btn-numbers w-100">2</button></a>
+                        <button onclick="addNumber(2)" class=" btn btn-numbers w-100">2</button>
                     </div>
                     <div class="col">
-                        <a href=""><button class=" btn btn-numbers w-100">3</button></a>
+                        <button onclick="addNumber(3)" class=" btn btn-numbers w-100">3</button>
                     </div>
                     <div class="col">
-                        <a href=""><button class=" btn btn-operators w-100">+</button></a>
+                        <button onclick="setOperator('+')" class=" btn btn-operators w-100">+</button>
                     </div>
                 </div>
             </div>
@@ -27,16 +29,16 @@
             <div class="container text-center ">
                 <div class="row g-1 m-1 mt-3">
                     <div class="col w-100">
-                        <a href=""><button class=" btn btn-numbers w-100">4</button></a>
+                        <button onclick="addNumber(4)" class=" btn btn-numbers w-100">4</button>
                     </div>
                     <div class="col">
-                        <a href=""><button class=" btn btn-numbers w-100">5</button></a>
+                        <button onclick="addNumber(5)" class=" btn btn-numbers w-100">5</button>
                     </div>
                     <div class="col">
-                        <a href=""><button class=" btn btn-numbers w-100">6</button></a>
+                        <button onclick="addNumber(6)" class=" btn btn-numbers w-100">6</button>
                     </div>
                     <div class="col">
-                        <a href=""><button class=" btn btn-operators w-100">-</button></a>
+                        <button onclick="setOperator('-')" class=" btn btn-operators w-100">-</button>
                     </div>
                 </div>
             </div>
@@ -44,16 +46,16 @@
             <div class="container text-center ">
                 <div class="row g-1 m-1 mt-3">
                     <div class="col w-100">
-                        <a href=""><button class=" btn btn-numbers w-100">7</button></a>
+                        <button onclick="addNumber(7)" class=" btn btn-numbers w-100">7</button>
                     </div>
                     <div class="col">
-                        <a href=""><button class=" btn btn-numbers w-100">8</button></a>
+                        <button onclick="addNumber(8)" class=" btn btn-numbers w-100">8</button>
                     </div>
                     <div class="col">
-                        <a href=""><button class=" btn btn-numbers w-100">9</button></a>
+                        <button onclick="addNumber(9)" class=" btn btn-numbers w-100">9</button>
                     </div>
                     <div class="col">
-                        <a href=""><button class=" btn btn-operators w-100">X</button></a>
+                        <button onclick="setOperator('X')" class=" btn btn-operators w-100">X</button>
                     </div>
                 </div>
             </div>
@@ -61,16 +63,16 @@
             <div class="container text-center ">
                 <div class="row g-1 m-1 mt-3">
                     <div class="col w-100">
-                        <a href=""><button class="btn btn-clear w-100">C</button></a>
+                        <button onclick="clearCalculator()" class="btn btn-clear w-100">C</button>
                     </div>
                     <div class="col">
-                        <a href=""><button class=" btn btn-numbers w-100">0</button></a>
+                        <button onclick="addNumber(0)" class=" btn btn-numbers w-100">0</button>
                     </div>
                     <div class="col">
-                        <a href=""><button class=" btn btn-equals w-100">=</button></a>
+                        <button onclick="equals()" class=" btn btn-equals w-100">=</button>
                     </div>
                     <div class="col">
-                        <a href=""><button class=" btn btn-operators w-100">/</button></a>
+                        <button onclick="setOperator('/')" class=" btn btn-operators w-100">/</button>
                     </div>
                 </div>
             </div>

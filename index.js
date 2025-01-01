@@ -15,5 +15,5 @@ app.get("/", (req, res) => {
 })
 
 app.listen("8080", () => {
-    console.log("aplicação rodadando na porta 8080")
+  
 })
