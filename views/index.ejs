@@ -69,7 +69,9 @@
                         <button onclick="addNumber(0)" class=" btn btn-numbers w-100">0</button>
                     </div>
                     <div class="col">
-                        <button onclick="equals()" class=" btn btn-equals w-100">=</button>
+                        <form id="formulario">
+                            <button type="submit" onclick="equals(event)" class=" btn btn-equals w-100">=</button>
+                        </form>
                     </div>
                     <div class="col">
                         <button onclick="setOperator('/')" class=" btn btn-operators w-100">÷</button>
