@@ -14,7 +14,6 @@ function setOperator(op){
     screen.value= ""
     operator = op
     lastOperator = null;
-    console.log(operator)
 }
 
 function clearCalculator(){
