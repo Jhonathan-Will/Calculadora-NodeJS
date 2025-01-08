@@ -1,4 +1,6 @@
+
 const screen = document.getElementById('screen')
+const divHistory = document.getElementById('history')
 
 let number_1 = 0;
 let number_2 = 0;
@@ -75,4 +77,8 @@ function salvar(number1, operator, number2){
         }catch(error){
             console.log(error)
         }
+
+        const data = resposta
+
+        divHistory.innerHTML.replace()
 }

@@ -18,7 +18,11 @@ connection.authenticate().then(() => {
 })
 
 app.get("/", (req, res) => {
-    res.render("index")
+    history.findAll().then(historico => {
+        res.render("index", {
+            json: historico
+        })
+    })
 })
 
 app.post("/salvar", (req, res) => {
@@ -32,6 +36,10 @@ app.post("/salvar", (req, res) => {
         secondnumber: number2
     }).then(() => {
         console.log("dados enviados com sucesso")
+        history.findAll().then(historico => {
+           res.render('partials/history', {json: historico})
+           res.sendDate({json: historico})
+        })
     }).catch((Error) => {
         console.log(Error)
     })
