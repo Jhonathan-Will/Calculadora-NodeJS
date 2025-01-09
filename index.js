@@ -38,7 +38,6 @@ app.post("/salvar", (req, res) => {
         console.log("dados enviados com sucesso")
         history.findAll().then(historico => {
            res.render('partials/history', {json: historico})
-           res.sendDate({json: historico})
         })
     }).catch((Error) => {
         console.log(Error)

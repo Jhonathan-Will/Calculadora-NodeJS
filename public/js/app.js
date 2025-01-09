@@ -67,18 +67,22 @@ function equals(event){
 
 function salvar(number1, operator, number2){
         try{
-            const resposta = fetch("/salvar", {
+            fetch("/salvar", {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({ number1, operator, number2}),
+            }).then(response => {
+               if(!response.ok){
+                    throw new Error('erro ao buscar dados')
+               }
+               return response.text()
+            }).then(html => {
+                divHistory.innerHTML = " "
+                divHistory.insertAdjacentHTML('beforeend',html)
             })
         }catch(error){
             console.log(error)
         }
-
-        const data = resposta
-
-        divHistory.innerHTML.replace()
 }
