@@ -35,33 +35,58 @@ function equals(event){
     screen.value = " "
     switch(operator){
         case "+":
-           salvar(number_1, operator, number_2);
-
-            screen.value = number_1 + number_2
-            number_1 = parseInt(screen.value)
-            lastOperator = operator
+             
+            if(!(Number.isNaN(eval(`${number_1} ${operator} ${number_2}`)))){
+                salvar(number_1, operator, number_2);
+                screen.value = number_1 + number_2
+                number_1 = parseInt(screen.value)
+                lastOperator = operator
+            }else{
+                clearCalculator()
+                screen.value = "Error"
+            }
+            
             break;
         case "-":
-            salvar(number_1, operator, number_2);
+              
+            if(!(Number.isNaN(eval(`${number_1} ${operator} ${number_2}`)))){
+                salvar(number_1, operator, number_2);
+                screen.value = number_1 - number_2
+                number_1 = parseInt(screen.value)
+                lastOperator = operator
+            }else{
+                clearCalculator()
+                screen.value = "Error"
+            }
 
-            screen.value = number_1 - number_2
-             number_1 = parseInt(screen.value)
-             lastOperator = operator
             break;
-        case "X":
-            salvar(number_1, operator, number_2);
-
-            screen.value = number_1 * number_2
-             number_1 = parseInt(screen.value)
-             lastOperator = operator
+        case "*":
+            
+            if(!(Number.isNaN(eval(`${number_1} ${operator} ${number_2}`)))){
+                salvar(number_1, operator, number_2);
+                screen.value = number_1 * number_2
+                number_1 = parseInt(screen.value)
+                lastOperator = operator
+            }else{
+                clearCalculator()
+                screen.value = "Error"
+            }
+                
             break;
         case "/":
-            salvar(number_1, operator, number_2);
+              
+            if(!(Number.isNaN(eval(`${number_1} ${operator} ${number_2}`)))){
+                salvar(number_1, operator, number_2);
+                screen.value = number_1 / number_2
+                number_1 = parseInt(screen.value)
+                lastOperator = operator
+            }else{
+                clearCalculator()
+                screen.value = "Error"
+            }
 
-            screen.value = number_1 / number_2
-             number_1 = parseInt(screen.value)
-             lastOperator = operator
             break;
+            
     }
 }
 

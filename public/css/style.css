@@ -43,6 +43,7 @@ body{
 }
 
 .screen{
+    text-align: right;
     background-color: var(--background);
     color: var(--text);
     border-radius: 10px;
